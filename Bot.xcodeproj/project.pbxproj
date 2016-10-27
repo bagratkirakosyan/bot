@@ -40,6 +40,14 @@
 		12AB0A361DC2BEC1004B43F3 /* street.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12AB0A351DC2BEC1004B43F3 /* street.jpg */; };
 		12AB0A381DC2C0C4004B43F3 /* passport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12AB0A371DC2C0C4004B43F3 /* passport.jpg */; };
 		12AB0A3A1DC2C102004B43F3 /* passport2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB0A391DC2C102004B43F3 /* passport2.png */; };
+		E647DC431DC297A800133D11 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E647DC421DC297A800133D11 /* ChatViewController.m */; };
+		E647DC451DC297E800133D11 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E647DC441DC297E800133D11 /* ChatViewController.xib */; };
+		E647DC481DC2A6AD00133D11 /* ChatMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = E647DC471DC2A6AD00133D11 /* ChatMessageData.m */; };
+		E647DC4D1DC2AC8300133D11 /* LeftTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E647DC4C1DC2AC8300133D11 /* LeftTextCell.m */; };
+		E647DC501DC2AC9C00133D11 /* RightTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E647DC4F1DC2AC9C00133D11 /* RightTextCell.m */; };
+		E647DC541DC2ACDC00133D11 /* RightTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E647DC531DC2ACDC00133D11 /* RightTextCell.xib */; };
+		E647DC561DC2AD0400133D11 /* LeftTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E647DC551DC2AD0400133D11 /* LeftTextCell.xib */; };
+		E647DC591DC2BA4F00133D11 /* UIColor+BotColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E647DC581DC2BA4F00133D11 /* UIColor+BotColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +128,19 @@
 		12AB0A351DC2BEC1004B43F3 /* street.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street.jpg; sourceTree = "<group>"; };
 		12AB0A371DC2C0C4004B43F3 /* passport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = passport.jpg; sourceTree = "<group>"; };
 		12AB0A391DC2C102004B43F3 /* passport2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passport2.png; sourceTree = "<group>"; };
+		E647DC411DC297A800133D11 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = Bot/ChatViewController.h; sourceTree = SOURCE_ROOT; };
+		E647DC421DC297A800133D11 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = Bot/ChatViewController.m; sourceTree = SOURCE_ROOT; };
+		E647DC441DC297E800133D11 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatViewController.xib; path = Bot/ChatViewController.xib; sourceTree = SOURCE_ROOT; };
+		E647DC461DC2A6AD00133D11 /* ChatMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatMessageData.h; path = Bot/ChatMessageData.h; sourceTree = SOURCE_ROOT; };
+		E647DC471DC2A6AD00133D11 /* ChatMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatMessageData.m; path = Bot/ChatMessageData.m; sourceTree = SOURCE_ROOT; };
+		E647DC4B1DC2AC8300133D11 /* LeftTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTextCell.h; sourceTree = "<group>"; };
+		E647DC4C1DC2AC8300133D11 /* LeftTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTextCell.m; sourceTree = "<group>"; };
+		E647DC4E1DC2AC9C00133D11 /* RightTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightTextCell.h; sourceTree = "<group>"; };
+		E647DC4F1DC2AC9C00133D11 /* RightTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightTextCell.m; sourceTree = "<group>"; };
+		E647DC531DC2ACDC00133D11 /* RightTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightTextCell.xib; sourceTree = "<group>"; };
+		E647DC551DC2AD0400133D11 /* LeftTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftTextCell.xib; sourceTree = "<group>"; };
+		E647DC571DC2BA4F00133D11 /* UIColor+BotColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+BotColors.h"; path = "Bot/LeftTextCell/UIColor+BotColors.h"; sourceTree = SOURCE_ROOT; };
+		E647DC581DC2BA4F00133D11 /* UIColor+BotColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BotColors.m"; path = "Bot/LeftTextCell/UIColor+BotColors.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +253,8 @@
 				12AB09F71DC2A819004B43F3 /* Recorder */,
 				12AB09EF1DC29552004B43F3 /* Crop */,
 				12AB09EE1DC29546004B43F3 /* Chat */,
+				E647DC571DC2BA4F00133D11 /* UIColor+BotColors.h */,
+				E647DC581DC2BA4F00133D11 /* UIColor+BotColors.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -239,6 +262,13 @@
 		12AB09EE1DC29546004B43F3 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				E647DC491DC2AC4A00133D11 /* LeftTextCell */,
+				E647DC4A1DC2AC6500133D11 /* RightTextCell */,
+				E647DC441DC297E800133D11 /* ChatViewController.xib */,
+				E647DC411DC297A800133D11 /* ChatViewController.h */,
+				E647DC421DC297A800133D11 /* ChatViewController.m */,
+				E647DC461DC2A6AD00133D11 /* ChatMessageData.h */,
+				E647DC471DC2A6AD00133D11 /* ChatMessageData.m */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -310,6 +340,28 @@
 			);
 			path = EZAudio;
 			sourceTree = "<group>";
+        };
+		E647DC491DC2AC4A00133D11 /* LeftTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				E647DC551DC2AD0400133D11 /* LeftTextCell.xib */,
+				E647DC4B1DC2AC8300133D11 /* LeftTextCell.h */,
+				E647DC4C1DC2AC8300133D11 /* LeftTextCell.m */,
+			);
+			name = LeftTextCell;
+			path = Bot/LeftTextCell;
+			sourceTree = SOURCE_ROOT;
+		};
+		E647DC4A1DC2AC6500133D11 /* RightTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				E647DC531DC2ACDC00133D11 /* RightTextCell.xib */,
+				E647DC4E1DC2AC9C00133D11 /* RightTextCell.h */,
+				E647DC4F1DC2AC9C00133D11 /* RightTextCell.m */,
+			);
+			name = RightTextCell;
+			path = Bot/RightTextCell;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -429,6 +481,10 @@
 				12AB09FC1DC2A829004B43F3 /* RecorderViewController.xib in Resources */,
 				12AB09C31DC291F6004B43F3 /* Assets.xcassets in Resources */,
 				12AB0A381DC2C0C4004B43F3 /* passport.jpg in Resources */,
+				E647DC541DC2ACDC00133D11 /* RightTextCell.xib in Resources */,
+				12AB09C31DC291F6004B43F3 /* Assets.xcassets in Resources */,
+				E647DC451DC297E800133D11 /* ChatViewController.xib in Resources */,
+				E647DC561DC2AD0400133D11 /* LeftTextCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +529,12 @@
 				12AB0A211DC2AFC7004B43F3 /* EZAudio.m in Sources */,
 				12AB0A311DC2AFC7004B43F3 /* TPCircularBuffer.c in Sources */,
 				12AB0A261DC2AFC7004B43F3 /* EZAudioFloatConverter.m in Sources */,
+				E647DC431DC297A800133D11 /* ChatViewController.m in Sources */,
+				E647DC501DC2AC9C00133D11 /* RightTextCell.m in Sources */,
+				12AB09EC1DC294C9004B43F3 /* Networking.m in Sources */,
+				E647DC591DC2BA4F00133D11 /* UIColor+BotColors.m in Sources */,
+				E647DC481DC2A6AD00133D11 /* ChatMessageData.m in Sources */,
+				E647DC4D1DC2AC8300133D11 /* LeftTextCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +766,7 @@
 				12AB09E21DC291F6004B43F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12AB09E31DC291F6004B43F3 /* Build configuration list for PBXNativeTarget "BotTests" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +775,7 @@
 				12AB09E51DC291F6004B43F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12AB09E61DC291F6004B43F3 /* Build configuration list for PBXNativeTarget "BotUITests" */ = {
 			isa = XCConfigurationList;
@@ -720,6 +784,7 @@
 				12AB09E81DC291F6004B43F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

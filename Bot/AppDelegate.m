@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Networking.h"
 #import "RecorderViewController.h"
+#import "ChatViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [RecorderViewController new];
+    self.window.rootViewController = [ChatViewController new];
     [self.window makeKeyAndVisible];
     
     NSString *str=[[NSBundle mainBundle] pathForResource:@"passport" ofType:@"jpg"];
