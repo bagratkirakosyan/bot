@@ -13,6 +13,7 @@
 		12AB09C61DC291F6004B43F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12AB09C41DC291F6004B43F3 /* LaunchScreen.storyboard */; };
 		12AB09D11DC291F6004B43F3 /* BotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AB09D01DC291F6004B43F3 /* BotTests.m */; };
 		12AB09DC1DC291F6004B43F3 /* BotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AB09DB1DC291F6004B43F3 /* BotUITests.m */; };
+		12AB09EC1DC294C9004B43F3 /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AB09EB1DC294C9004B43F3 /* Networking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		12AB09D71DC291F6004B43F3 /* BotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AB09DB1DC291F6004B43F3 /* BotUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BotUITests.m; sourceTree = "<group>"; };
 		12AB09DD1DC291F6004B43F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12AB09EA1DC294C9004B43F3 /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		12AB09EB1DC294C9004B43F3 /* Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 		12AB09B51DC291F6004B43F3 /* Bot */ = {
 			isa = PBXGroup;
 			children = (
+				12AB09ED1DC2952A004B43F3 /* Modules */,
+				12AB09E91DC2949E004B43F3 /* Networking */,
 				12AB09B91DC291F6004B43F3 /* AppDelegate.h */,
 				12AB09BA1DC291F6004B43F3 /* AppDelegate.m */,
 				12AB09C21DC291F6004B43F3 /* Assets.xcassets */,
@@ -130,6 +135,38 @@
 				12AB09DD1DC291F6004B43F3 /* Info.plist */,
 			);
 			path = BotUITests;
+			sourceTree = "<group>";
+		};
+		12AB09E91DC2949E004B43F3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				12AB09EA1DC294C9004B43F3 /* Networking.h */,
+				12AB09EB1DC294C9004B43F3 /* Networking.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		12AB09ED1DC2952A004B43F3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				12AB09EF1DC29552004B43F3 /* Crop */,
+				12AB09EE1DC29546004B43F3 /* Chat */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		12AB09EE1DC29546004B43F3 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		12AB09EF1DC29552004B43F3 /* Crop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Crop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +306,7 @@
 			files = (
 				12AB09BB1DC291F6004B43F3 /* AppDelegate.m in Sources */,
 				12AB09B81DC291F6004B43F3 /* main.m in Sources */,
+				12AB09EC1DC294C9004B43F3 /* Networking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
