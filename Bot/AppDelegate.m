@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ChatViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [UIViewController new];
+    self.window.rootViewController = [ChatViewController new];
     [self.window makeKeyAndVisible];
     
     return YES;
