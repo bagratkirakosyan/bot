@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecorderViewController">
+            <connections>
+                <outlet property="playButton" destination="Rjn-mf-1we" id="LC3-wK-uq9"/>
+                <outlet property="recordButton" destination="uwU-LY-WjV" id="9WM-XO-Ez5"/>
+                <outlet property="stopButton" destination="U4o-fI-8jY" id="F1p-F1-cC3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjn-mf-1we">
+                    <state key="normal" title="Play"/>
+                    <connections>
+                        <action selector="playTapped:" destination="-1" eventType="touchUpInside" id="ojb-oY-59u"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4o-fI-8jY">
+                    <state key="normal" title="Stop"/>
+                    <connections>
+                        <action selector="stopTapped:" destination="-1" eventType="touchUpInside" id="flF-Bu-3zQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwU-LY-WjV">
+                    <state key="normal" title="Record"/>
+                    <connections>
+                        <action selector="recordPauseTapped:" destination="-1" eventType="touchUpInside" id="9oM-c0-19A"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Rjn-mf-1we" secondAttribute="bottom" constant="50" id="Au6-cc-jSh"/>
+                <constraint firstItem="Rjn-mf-1we" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="eNe-Nr-WFU"/>
+                <constraint firstAttribute="bottom" secondItem="U4o-fI-8jY" secondAttribute="bottom" constant="50" id="iIe-0y-d3j"/>
+                <constraint firstAttribute="trailing" secondItem="U4o-fI-8jY" secondAttribute="trailing" constant="50" id="uIG-eE-ran"/>
+                <constraint firstItem="uwU-LY-WjV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="xqD-U0-1c5"/>
+                <constraint firstItem="uwU-LY-WjV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y5I-yS-urf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
