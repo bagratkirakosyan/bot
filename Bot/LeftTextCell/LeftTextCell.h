@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChatMessageData.h"
 
 @interface LeftTextCell : UITableViewCell
 
-- (void)setMessage:(NSString *)message;
+- (void)setMessage:(ChatMessageData *)message;
 
 @end

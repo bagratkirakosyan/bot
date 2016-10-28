@@ -12,10 +12,12 @@
 
 + (instancetype)sharedInstance;
 
-- (void)auth:(NSData *)image withCompletion:(void(^)(BOOL success, NSString *result))completion;
+- (void)auth:(void(^)(NSString *result))completion;
 
-- (void)analyzeAudio:(NSData *)audio withCompletion:(void(^)(BOOL success, NSDictionary *result))completion;
+- (void)analyzeAudio:(NSData *)audio withCompletion:(void(^)(NSDictionary *result))completion;
 
-- (void)analyzeImage:(NSData *)image withCompletion:(void(^)(BOOL success, NSDictionary *result))completion;
+- (void)analyzeImage:(NSData *)image withCompletion:(void(^)(NSString *result))completion;
+
+- (void)analyzeMessage:(NSString *)message withCompletion:(void(^)(NSDictionary *result))completion;
 
 @end

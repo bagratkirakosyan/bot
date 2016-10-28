@@ -21,21 +21,20 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.profileImageView.image = [UIImage imageNamed:@"bot"];
-    self.profileImageView.clipsToBounds = true;
     self.profileImageView.layer.cornerRadius = 20;
-    
     self.messageContainerView.layer.borderWidth = 1;
-    self.messageContainerView.layer.borderColor = [[UIColor botBlue] CGColor];
-    self.messageContainerView.layer.cornerRadius = 12.5;
+    self.messageContainerView.layer.borderColor = [UIColor botBlue].CGColor;
+    self.messageContainerView.layer.cornerRadius = 10;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-}
-
-- (void)setMessage:(NSString *)message {
-    self.messageLabel.text = message;
+- (void)setMessage:(ChatMessageData *)message {
+    self.messageLabel.text = message.message;
+    
+    if (message.bot) {
+        self.profileImageView.image = [UIImage imageNamed:@"bot"];
+    } else {
+        self.profileImageView.image = [UIImage imageNamed:@"user"];
+    }
 }
 
 @end

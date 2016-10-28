@@ -11,10 +11,11 @@
 
 @interface ChatMessageData : NSObject
 
+@property UIImage *image;
 @property NSString *message;
 @property BOOL bot;
 @property CGSize textSize;
 
-- (instancetype)initWith:(NSString *)message bot:(BOOL)bot maxTextWidth:(CGFloat)maxTextWidth;
+- (instancetype)initWith:(NSString *)message image:(UIImage *)image bot:(BOOL)bot maxTextWidth:(CGFloat)maxTextWidth;
 
 @end

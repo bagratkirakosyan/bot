@@ -21,31 +21,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [ChatViewController new];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[ChatViewController new]];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
     NSString *str=[[NSBundle mainBundle] pathForResource:@"passport" ofType:@"jpg"];
     NSData *fileData = [NSData dataWithContentsOfFile:str];
     
     
-    [[Networking sharedInstance] analyzeImage:fileData withCompletion:^(BOOL success, NSDictionary *result) {
-        NSArray *captions = result[@"description"][@"captions"];
-        NSString *description = captions[0][@"text"];
-        description = [description stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[description substringToIndex:1] uppercaseString]];
-        NSArray *tags = result[@"description"][@"tags"];
-        NSString *tag = [tags componentsJoinedByString:@" #"];
-        
-        NSString *format;
-        
-        if (description.length && tag.length) {
-            format = @"%@. #%@";
-        } else {
-            format = @"%@";
-        }
-        
-        NSString *fullDescription = [NSString stringWithFormat:format, description, tag];
-        NSLog(@"%@", fullDescription);
-    }];
+    
     
     
 //    [[Networking sharedInstance] auth:nil withCompletion:^(BOOL success, NSString *result) {

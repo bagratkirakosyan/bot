@@ -1,22 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rightTextCellID" rowHeight="301" id="KGk-i7-Jjw" customClass="RightTextCell">
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="rightTextCellID" rowHeight="301" id="KGk-i7-Jjw" customClass="RightTextCell">
             <rect key="frame" x="0.0" y="0.0" width="528" height="301"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <frame key="frameInset" width="528" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9NJ-dn-HUF">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9NJ-dn-HUF">
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="44J-pg-qki"/>
                             <constraint firstAttribute="width" constant="40" id="dWo-Yb-Bzc"/>
@@ -42,10 +43,10 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="9NJ-dn-HUF" firstAttribute="top" secondItem="99d-kB-YoL" secondAttribute="bottom" constant="-5" id="2tE-Z9-vYS"/>
+                    <constraint firstItem="9NJ-dn-HUF" firstAttribute="centerY" secondItem="99d-kB-YoL" secondAttribute="bottom" id="2tE-Z9-vYS"/>
                     <constraint firstAttribute="trailing" secondItem="9NJ-dn-HUF" secondAttribute="trailing" constant="5" id="CaX-ft-YDI"/>
-                    <constraint firstItem="9NJ-dn-HUF" firstAttribute="leading" secondItem="99d-kB-YoL" secondAttribute="trailing" id="X7f-VT-p86"/>
-                    <constraint firstItem="99d-kB-YoL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="eWR-LO-Uvf"/>
+                    <constraint firstItem="9NJ-dn-HUF" firstAttribute="leading" secondItem="99d-kB-YoL" secondAttribute="trailing" constant="10" id="X7f-VT-p86"/>
+                    <constraint firstItem="99d-kB-YoL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eWR-LO-Uvf"/>
                     <constraint firstItem="99d-kB-YoL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="qCH-r6-wnN"/>
                     <constraint firstAttribute="bottom" secondItem="9NJ-dn-HUF" secondAttribute="bottom" constant="5" id="teo-jl-ZxK"/>
                 </constraints>

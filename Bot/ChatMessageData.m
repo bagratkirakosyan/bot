@@ -16,10 +16,10 @@
 
 @implementation ChatMessageData
 
-- (instancetype)initWith:(NSString *)message bot:(BOOL)bot maxTextWidth:(CGFloat)maxTextWidth {
-    self = [super init];
+- (instancetype)initWith:(NSString *)message image:(UIImage *)image bot:(BOOL)bot maxTextWidth:(CGFloat)maxTextWidth {    self = [super init];
     if (self) {
         self.message = message;
+        self.image = image;
         self.bot = bot;
         self.textSize = [message boundingRectWithSize:CGSizeMake(maxTextWidth, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes: @{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size;
     }

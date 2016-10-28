@@ -9,19 +9,17 @@
 #import "RecorderViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "Networking.h"
-#import "EZRecorder.h"
-#import "EZMicrophone.h"
 #import <CoreAudio/CoreAudioTypes.h>
 
-@interface RecorderViewController () <EZMicrophoneDelegate, EZRecorderDelegate>
+@interface RecorderViewController () //<EZMicrophoneDelegate, EZRecorderDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;
 @property (weak, nonatomic) IBOutlet UIButton *recordButton;
 
 
-@property (nonatomic) EZMicrophone *microphone;
-@property (nonatomic) EZRecorder *recorder;
+//@property (nonatomic) EZMicrophone *microphone;
+//@property (nonatomic) EZRecorder *recorder;
 
 @end
 
@@ -100,7 +98,7 @@
 - (IBAction)recordPauseTapped:(id)sender {
     
     
-    [self.recorder closeAudioFile];
+//    [self.recorder closeAudioFile];
     
 //    // Stop the audio player before recording
 //    if (player.playing) {
