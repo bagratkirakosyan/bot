@@ -21,7 +21,10 @@
         self.message = message;
         self.image = image;
         self.bot = bot;
-        self.textSize = [message boundingRectWithSize:CGSizeMake(maxTextWidth, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes: @{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size;
+        self.textSize = [message boundingRectWithSize:CGSizeMake(maxTextWidth, CGFLOAT_MAX)
+                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                           attributes: @{NSFontAttributeName : [UIFont systemFontOfSize:14]}
+                                              context:nil].size;
     }
     return self;
 }

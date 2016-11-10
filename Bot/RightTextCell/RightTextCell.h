@@ -11,6 +11,6 @@
 
 @interface RightTextCell : UITableViewCell
 
-- (void)setMessage:(ChatMessageData *)message;
+@property (strong, nonatomic) ChatMessageData *message;
 
 @end

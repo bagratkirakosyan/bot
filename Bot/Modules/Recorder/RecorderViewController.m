@@ -11,7 +11,7 @@
 #import "Networking.h"
 #import <CoreAudio/CoreAudioTypes.h>
 
-@interface RecorderViewController () //<EZMicrophoneDelegate, EZRecorderDelegate>
+@interface RecorderViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;

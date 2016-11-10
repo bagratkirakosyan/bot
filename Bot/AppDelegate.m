@@ -22,11 +22,14 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[ChatViewController new]];
+    navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.13 green:0.13 blue:0.13 alpha:1.0];
+    navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
-    NSString *str=[[NSBundle mainBundle] pathForResource:@"passport" ofType:@"jpg"];
-    NSData *fileData = [NSData dataWithContentsOfFile:str];
+//    NSString *str=[[NSBundle mainBundle] pathForResource:@"passport" ofType:@"jpg"];
+//    NSData *fileData = [NSData dataWithContentsOfFile:str];
     
     
     

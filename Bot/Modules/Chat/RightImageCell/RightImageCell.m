@@ -8,6 +8,13 @@
 
 #import "RightImageCell.h"
 
+@interface RightImageCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+
+@end
+
 @implementation RightImageCell
 
 - (void)awakeFromNib {
@@ -17,6 +24,8 @@
 }
 
 - (void)setMessage:(ChatMessageData *)message {
+    _message = message;
+    
     self.photoImageView.image = message.image;
     
     if (message.bot) {

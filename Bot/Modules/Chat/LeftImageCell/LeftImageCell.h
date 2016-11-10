@@ -11,9 +11,6 @@
 
 @interface LeftImageCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
-@property (weak) IBOutlet UIImageView *profileImageView;
-
-- (void)setMessage:(ChatMessageData *)message;
+@property (strong, nonatomic) ChatMessageData *message;
 
 @end

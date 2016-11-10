@@ -22,12 +22,12 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.profileImageView.layer.cornerRadius = 20;
-    self.messageContainerView.layer.borderWidth = 1;
-    self.messageContainerView.layer.borderColor = [UIColor botLightGray].CGColor;
     self.messageContainerView.layer.cornerRadius = 10;
 }
 
 - (void)setMessage:(ChatMessageData *)message {
+    _message = message;
+    
     self.messageLabel.text = message.message;
     
     if (message.bot) {
